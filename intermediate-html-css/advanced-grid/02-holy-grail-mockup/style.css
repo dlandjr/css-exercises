@@ -89,3 +89,73 @@
   font-size: 13px;
   font-weight: normal;
 }
+
+/* SOLUTION */
+.container {
+  display: grid;
+  gap: 4px;
+  grid-template-columns: 1fr 4fr;
+}
+
+.header {
+  display: grid;
+  grid-column: span 2;
+  grid-template-columns: 1fr 2fr;
+}
+
+.logo {
+  justify-self: start;
+}
+
+.menu {
+  align-self: center;
+}
+
+.footer {
+  display: grid;
+  grid-column: span 2;
+}
+
+.menu ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.menu ul,
+.menu li {
+  list-style-type: none;
+}
+
+.nav ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.nav ul,
+.nav li {
+  list-style-type: none;
+}
+
+.sidebar {
+  display: grid;
+  gap: 50px;
+  grid-row: span 2;
+}
+
+.side-content,
+.photo {
+  display: grid;
+  align-items: center;
+}
+
+
+.article {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-column-start: 2;
+}
+
+.card {
+  height: 200px;
+}
